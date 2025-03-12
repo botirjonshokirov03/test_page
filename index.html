@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Подтвердите заказ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- Background form (partially visible) -->
+      <div class="form-background">
+        <div class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="back-nav">
+          <div class="back-arrow">&#10094;</div>
+          <div class="form-title">Заказ</div>
+        </div>
+
+        <div class="form-instruction">
+          Укажите контактные данные для связи с продавцом
+        </div>
+
+        <div class="form-field">
+          <label>ФИО</label>
+          <input type="text" />
+        </div>
+
+        <div class="form-field">
+          <label>Телефон</label>
+          <input type="tel" placeholder="+998" />
+        </div>
+
+        <div class="form-field">
+          <label>Email</label>
+          <input type="email" />
+        </div>
+      </div>
+
+      <!-- Modal popup -->
+      <div class="modal">
+        <div class="modal-header">
+          <h1>Подтвердите заказ</h1>
+          <button class="close-button">&#10005;</button>
+        </div>
+
+        <div class="modal-content">
+          <!-- Company info card -->
+          <div class="company-card">
+            <div class="company-logo">
+              <img src="./assets/logo.png" alt="E-bidet logo" />
+            </div>
+            <div class="company-info">
+              <h2>E-bidet Uzbekistan</h2>
+              <p>Ташкент, Шайхантахурский район</p>
+            </div>
+          </div>
+
+          <!-- Success message -->
+          <div class="success-container">
+            <div class="success-icon">
+              <img
+                src="./assets/checked.png"
+                width="40px"
+                height="40px"
+                alt="Success Icon"
+              />
+            </div>
+            <h2 class="order-number">Номер заказа: 3957</h2>
+            <p class="success-message">
+              Ваш заказ успешно принят<br />
+              и передан на обработку продавцу.
+            </p>
+          </div>
+
+          <!-- Company details -->
+          <div class="details-list">
+            <div class="detail-item">
+              <div class="detail-icon">
+                <img src="./assets/like.svg" alt="" />
+              </div>
+              <div class="detail-label">Компания</div>
+              <div class="detail-value">E-bidet Uzbekistan</div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon">
+                <img src="./assets/location.svg" alt="" />
+              </div>
+              <div class="detail-label">Адрес</div>
+              <div class="detail-value">
+                г.Ташкент, ул. Саларская<br />35 В две строки
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon">
+                <img src="./assets/clock.svg" alt="" />
+              </div>
+              <div class="detail-label">График работы</div>
+              <div class="detail-value">
+                <a href="#" class="view-link">Посмотреть</a>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon">
+               
+                <img src="./assets/phone.svg" alt="" />
+              </div>
+              <div class="detail-label">Номер телефона</div>
+              <div class="detail-value">+998 90 900 90 90</div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon">
+                <img src="./assets/language.svg" alt="" />
+                </svg>
+              </div>
+              <div class="detail-label">Сайт</div>
+              <div class="detail-value">
+                <a href="http://wellblue.gl.uz" class="website-link"
+                  >wellblue.gl.uz</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Action button -->
+          <button class="products-button">Все товары продавца</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
